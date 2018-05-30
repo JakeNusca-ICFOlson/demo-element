@@ -32,7 +32,7 @@
       }
 
       fireClickEvent() {
-        this.dispatchEvent(new CustomEvent('buttonClicked', { message: "Here is some data from Polymer" }));
+        this.dispatchEvent(new CustomEvent('buttonClicked', { detail: { message: "Here is some data from Polymer" } }));
       }
     }
 
