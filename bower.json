@@ -1,6 +1,7 @@
 {
   "name": "demo-element",
   "description": "A demo Polymer element",
+  "version": "0.0.1",
   "main": "demo-element.html",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0"
