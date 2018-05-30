@@ -8,6 +8,7 @@
       }
     </style>
     <h2>Hello [[prop1]]!</h2>
+    <button on-click="fireClickEvent">Fire event</button>
   </template>
 
   <script>
@@ -28,6 +29,10 @@
             value: 'demo-element'
           }
         };
+      }
+
+      fireClickEvent() {
+        this.dispatchEvent(new CustomEvent('buttonClicked', { message: "Here is some data from Polymer" }));
       }
     }
 
