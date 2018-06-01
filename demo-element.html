@@ -9,6 +9,9 @@
     </style>
     <h2>Hello [[prop1]]!</h2>
     <button on-click="fireClickEvent">Fire event</button>
+
+    <input value="{{inputText::input}}" />
+    <div>Polymer inputText value: "[[inputText]]"</div>
   </template>
 
   <script>
@@ -27,6 +30,10 @@
           prop1: {
             type: String,
             value: 'demo-element'
+          },
+          inputText: {
+            type: String,
+            notify: true
           }
         };
       }
